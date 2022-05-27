@@ -7,7 +7,6 @@ let score = 20;
 let highScore = 0;
 document.querySelector('.high-score').textContent = highScore;
 let ranNumber = Math.trunc(Math.random() * 20 + 1);
-document.querySelector('.guess-no-shower').textContent = ranNumber;
 document.querySelector('.check').addEventListener('click', function () {
   const userNumber = Number(document.querySelector('.guess-no').value);
   //console.log(userNumber);
@@ -44,7 +43,7 @@ document.querySelector('.check').addEventListener('click', function () {
 });
 document.querySelector('.play-again').addEventListener('click', function () {
   score = 20;
-  let ranNumber = Math.trunc(Math.random() * 20 + 1);
+  ranNumber = Math.trunc(Math.random() * 20 + 1);
   document.querySelector('.score-given').textContent = score;
   document.querySelector('.guess-no-shower').textContent = '?';
   document.querySelector('.guess-message').textContent = 'Start guessing...';
