@@ -42,6 +42,8 @@ hr {
   width: 100px;
   border: none;
   background-color: white;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 .result {
   display: flex;
@@ -81,4 +83,8 @@ p {
 }
 button {
   display: block;
+}
+input {
+  font-size: larger;
+  font-weight: bolder;
 }
